@@ -1,0 +1,95 @@
+/* pages/homework/index.wxss */
+.list {
+  margin-top: 100rpx;
+}
+
+.topbar {
+  display: flex;
+  border-bottom: 2rpx solid #DCDFE6;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+}
+
+.topbar view {
+  flex: 1;
+  text-align: center;
+  color: #909399;
+}
+
+.topbar view text {
+  padding-bottom: 8rpx;
+}
+
+.topbar .active {
+  color: #409EFF;
+}
+
+.topbar .active text {
+  border-bottom: 6rpx solid #409EFF;
+}
+
+.content {
+  display: flex;
+  height: 170rpx;
+  padding: 30rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #DCDFE6;
+  /* background-color: red; */
+}
+
+.bg, .button, .info {
+  flex: 1;
+}
+
+.bg {
+  height: 170rpx;
+  width: 200rpx;
+  border-radius: 20rpx;
+}
+
+.info {
+  position: relative;
+  margin-left: 40rpx;
+}
+
+.info view:first-child {
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  width: 200rpx;
+  
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info view:last-child {
+  position: absolute;
+  bottom: 0;
+  
+}
+
+.button {
+  position: relative;
+}
+
+
+
+.button view:last-child {
+  color: #fff;
+  background-color: #409EFF;
+  border-radius: 80rpx;
+  position: absolute;
+  width: 160rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 34rpx;
+}

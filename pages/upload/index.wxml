@@ -1,0 +1,10 @@
+<!--pages/upload/index.wxml-->
+<image class='bg' src="http://img4.imgtn.bdimg.com/it/u=2153937626,1074119156&fm=26&gp=0.jpg" mode="cover"></image>
+<input class='title' placeholder="填写作业标题" auto-focus />
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <view wx:if="{{index}}" class="picker">
+    当前选择：{{array[index]}}
+  </view>
+  <view wx:else class="picker">请选择老师</view>
+</picker>
+<view class="submit">提交作业</view>

@@ -1,0 +1,36 @@
+/* pages/upload/index.wxss */
+Page {
+  background-color: #EEE;
+}
+
+.bg {
+  width: 100%;
+  height: 450rpx;
+  margin-bottom: 20rpx;
+}
+
+.title {
+  background: #fff;
+  height: 100rpx;
+  padding: 0 20rpx;
+  margin-bottom: 30rpx;
+  color: #909399;
+}
+
+.picker {
+  background: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 20rpx;
+  color: #909399;
+}
+
+.submit {
+  background-color: #409EFF;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  color: #fff;
+  margin: 30rpx 20rpx;
+}

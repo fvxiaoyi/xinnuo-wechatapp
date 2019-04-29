@@ -1,0 +1,24 @@
+<view class='topbar'>
+  <view class="{{active==0 ? 'active':''}}" data-type='0' bindtap='topbarClick'>
+    <text>待批改</text>
+  </view>
+  <view class="{{active==1 ? 'active':''}}" data-type='1' bindtap='topbarClick'>
+    <text>已批改</text>
+  </view>
+  <view class="{{active==2 ? 'active':''}}" data-type='2' bindtap='topbarClick'>
+    <text>全部</text>
+  </view>
+</view>
+<view class='list'>
+  <view wx:for="{{list}}" class='content'>
+    <image class='bg' src="http://img4.imgtn.bdimg.com/it/u=2153937626,1074119156&fm=26&gp=0.jpg" mode="cover"></image>
+    <view class='info'>
+      <view>名称名称名称</view>
+      <view>时长</view>
+    </view>
+    <view class='button'>
+      <view>分数</view>
+      <view>查看</view>
+    </view>
+  </view>
+</view>

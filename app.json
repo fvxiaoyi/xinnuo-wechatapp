@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/upload/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/active/index",
+    "pages/homework/index"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/homework/index",
+        "text": "接口"
+      },
+      {
+        "pagePath": "pages/upload/index",
+        "text": "上传"
+      }
+    ]
+  }
+}

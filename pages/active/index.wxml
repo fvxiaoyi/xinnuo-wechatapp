@@ -1,0 +1,11 @@
+<!--pages/active/index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image wx:if="userInfo.avatarUrl" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class="userinfo-nickname">Hi {{userInfo.nickName}}</view>
+  </view>
+</view>
+<view class='form-wrap'>
+  <input class='active-phone' placeholder="请输入手机号码激活" auto-focus />
+  <button bindtap="setDisabled">激活</button>
+</view>
