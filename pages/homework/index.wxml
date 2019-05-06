@@ -9,7 +9,7 @@
     <text>全部</text>
   </view>
 </view>
-<view class='list'>
+<view class='content-wrap'>
   <view wx:for="{{list}}" class='content'>
     <image class='bg' src="http://img4.imgtn.bdimg.com/it/u=2153937626,1074119156&fm=26&gp=0.jpg" mode="cover"></image>
     <view class='info'>

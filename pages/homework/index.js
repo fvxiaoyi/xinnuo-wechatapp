@@ -6,6 +6,7 @@ Page({
    */
   data: {
     active: 0,
+    loading: false,
     list: []
   },
 
@@ -21,7 +22,7 @@ Page({
    */
   onLoad: function (options) {
     let list = []
-    for(let i=0;i<20;i++){
+    for(let i=0;i<10;i++){
       list.push({})
     }
     this.setData({
@@ -61,14 +62,52 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    if(!this.data.loading) {
+      this.setData({
+        loading: true
+      })
+      wx.showNavigationBarLoading()
+      wx.setNavigationBarTitle({
+        title: '刷新中……'
+      })
+      setTimeout(() => {
+        this.setData({
+          list: this.data.list.concat({}),
+          loading: false
+        })
+        wx.hideNavigationBarLoading()
+        wx.setNavigationBarTitle({
+          title: '作业列表'
+        })
+        wx.stopPullDownRefresh()
+      }, 1000);
+    }
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    if(!this.data.loading) {
+      this.setData({
+        loading: true
+      })
+      wx.showNavigationBarLoading()
+      wx.setNavigationBarTitle({
+        title: '加载中……'
+      })
+      setTimeout(() => {
+        this.setData({
+          list: this.data.list.concat({}),
+          loading: false
+        })
+        wx.hideNavigationBarLoading()
+        wx.setNavigationBarTitle({
+          title: '作业列表'
+        })
+        wx.stopPullDownRefresh()
+      }, 1000);
+    }
   },
 
   /**

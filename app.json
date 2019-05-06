@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/homework/index",
     "pages/upload/index",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/active/index",
-    "pages/homework/index"
+    "pages/active/index"
+   
     
   ],
   "window": {
